@@ -1,10 +1,20 @@
-import "./App.css";
+import Home from "./pages/Home";
+import Page from "./pages/Page";
+import Loading from "./pages/Loading";
+import Map from "./pages/Map";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Page />}>
+          <Route index element={<Home />} />
+          <Route path="loading" element={<Loading />} />
+          <Route path="map" element={<Map />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

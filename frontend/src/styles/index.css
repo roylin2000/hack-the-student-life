@@ -70,3 +70,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+input {
+  @apply outline w-full rounded-md px-4;
+}
+
+.submit {
+  @apply w-24 my-2 cursor-pointer;
+}
