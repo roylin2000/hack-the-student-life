@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <div className="flex flex-col place-items-start w-full">
-        <h1 className="text-3xl font-bold my-4">UofT Building Room Finder</h1>
+        <h1 className="text-5xl font-bold my-4">UofT MicroMapper</h1>
         <form className="flex flex-col place-items-start w-full gap-y-6">
           <div className="flex flex-col place-items-start w-full gap-y-2">
             <label>Welcome! What building are you currently inside?</label>
